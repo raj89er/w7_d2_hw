@@ -99,10 +99,17 @@ let shopItems = [
     },
 ];
 
-
-
-
-
+for (let item of shopItems) {
+    console.log(
+        `
+=======================================
+Name:       ${item.name}
+Price:      $${item.price}
+About:      ${item.desc}
+Category:   ${item.category}
+=======================================
+        `
+    )};
 
 
 // Exercise #3
@@ -117,9 +124,6 @@ function reverseString(str) {
 }
 console.log(reverseString(testString1));
 console.log(reverseString(testString2));
-
-
-
 
 
 // Exercise #4
