@@ -11,13 +11,13 @@
 //   6.666666666666667,
 //   4.25
 // ]
+
 let heightsInInches = [66, 64, 60, 52, 72, 80, 51]
 
 const inch_to_feet = (inches) => inches / 12;
 
 let height_in_feet = heightsInInches.map(inch_to_feet);
 console.log(height_in_feet)
-
 
 
 // Exercise #2
@@ -112,7 +112,11 @@ let shopItems = [
 let testString1 = "Hello World" // "dlroW olleH"
 let testString2 = "test test 123" // "321 tset tset"
 
-
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+console.log(reverseString(testString1));
+console.log(reverseString(testString2));
 
 
 
@@ -125,3 +129,6 @@ let testString2 = "test test 123" // "321 tset tset"
 let testArr1 = ['Chicago', 'New York', 'Miami', 'New York','Chicago', 'Miami', 'Chicago', 'New York', 'Chicago'] // ['Chicago', 'New York', 'Miami']
 
 let testArr2 = [1, 1, 1, 2, 2, 3, 3, 4, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1, 2, 3, 4] // [1, 2, 3, 4]
+
+console.log(removeDuplicates(testArr1));
+console.log(removeDuplicates(testArr2));
