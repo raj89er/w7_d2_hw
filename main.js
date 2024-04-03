@@ -126,9 +126,15 @@ console.log(reverseString(testString2));
 // Duplicate Element Remover Function:
 // Write a function called removeDuplicates that takes an array (arr) as an argument and returns a new array with duplicate elements removed
 
-let testArr1 = ['Chicago', 'New York', 'Miami', 'New York','Chicago', 'Miami', 'Chicago', 'New York', 'Chicago'] // ['Chicago', 'New York', 'Miami']
+let testArr1 = ['Chicago', 'New York', 'Miami', 'New York','Chicago', 'Miami', 'Chicago', 'New York', 'Chicago'] 
+// ['Chicago', 'New York', 'Miami']
 
-let testArr2 = [1, 1, 1, 2, 2, 3, 3, 4, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1, 2, 3, 4] // [1, 2, 3, 4]
+let testArr2 = [1, 1, 1, 2, 2, 3, 3, 4, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1, 2, 3, 4] 
+// [1, 2, 3, 4]
+
+function removeDuplicates(arr) {
+    return [...new Set(arr)];
+}
 
 console.log(removeDuplicates(testArr1));
 console.log(removeDuplicates(testArr2));
